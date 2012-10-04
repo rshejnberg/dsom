@@ -1,0 +1,380 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+
+*/
+/*font-faces */
+@font-face {
+    font-family: 'BreeSerif-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('serifspecial.eot');
+    src: url('serifspecial.eot?#iefix') format('embedded-opentype'),
+         url('serifspecial.woff') format('woff'),
+         url('serifspecial.ttf') format('truetype'),
+         url('serifspecial.svg#serifspecial') format('svg');
+}
+/* Variable */
+
+/*Primary Elements*/
+body {
+		background-image: url("background.png");
+		width: 900px;
+		background-repeat: repeat-x
+		}
+$colTeal: #68d4ec;
+
+.navFooter {
+
+	
+	
+	background-color: blue;
+}
+ul {
+	color: blue;
+	list-style-type: none;
+	display: inline;
+	}
+#pageHeader {
+		
+		height: 170px;
+		width: 100%;
+		
+		margin: 0 auto;
+		z-index: 5;
+		position: fixed;
+		top: 200px;
+		}
+.headerTitle{
+		text-align: right;
+		margin: 0 auto;
+		width: 100%;
+		position: relative;
+		right: -3%;
+		top: 30px;
+		font-size: 60px;
+		
+		font-family: 'BreeSerif-Regular';		
+		}
+header {
+		position: relative;
+		right: -400px;
+		top: 35px;
+		width:70%;
+		font-size: 20px;
+		font-family: 'BreeSerif-Regular';
+		color:rgba(96,96,96,0.77);
+}
+#navCol { 
+		width: 250px;
+		height: 600px;
+		font-family: 'BreeSerif-Regular';
+		font-size: 30px;
+		color: #3a3a3a;
+		top: 250px;
+		padding: 20px;
+		text-align: right;
+		position: relative;
+		right: 50px;
+		top:50px;
+		cursor: pointer;
+		}
+/*Home-Page Sections*/
+#whatDo, #projects, #aboutMe {
+		width: 450px;;
+		height: 900px;
+		position: relative;
+		top: -575px;
+		right: -300px;
+		font-family: 'BreeSerif-Regular';
+		font-size: 16px;
+		line-height: 30px;
+		cursor: pointer;
+		}
+/*Home-Page Elements*/
+#divider {
+		background-color: #68d4ec;
+		height: 300px;
+		width: 10px;
+		position: relative;
+		top: -150px;
+		right: -265px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;	
+		}
+#divider2 {
+		background-color: #68d4ec;
+		height: 310px;
+		width: 10px;
+		position: relative;
+		top: -618px;
+		right: -235px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;
+		}
+#box1 {
+		width: 180px;
+		padding: 15px;
+		position: absolute;
+		text-align: center;
+		font-size: 15px;
+		top: 200px;
+		z-index: 1;
+		color: #f2f2f2;
+		background-color: #68d4ec;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;
+		height: 130px;
+		cursor: pointer;
+		}
+#box2 {
+		width: 180px;
+		height: 130px;
+		padding: 15px;
+		position: absolute;
+		text-align: center;
+		font-size: 15px;
+		z-index: 1;
+		color: #f2f2f2;
+		top: 200px;
+		left: 250px;
+		background-color: #68d4ec;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;
+		cursor: pointer;
+		}
+.designPic, .webappPic {
+		float: left;
+		position: relative;
+		right: 5px;
+		}
+.boxTitle {
+		text-align: center;
+		font-size: large;
+		color: yellow;
+		}
+.company {
+		text-align: center;
+		font-size: 30px;
+		color: #68d4ec;
+		word-spacing: -5px;
+		font-style: bold; 		
+		}
+.socialMedia {
+		opacity: 0.8;
+		position:fixed;
+		z-index: 10;
+		padding: 10px;
+		left: 91%;
+		top: 200px;
+		cursor: pointer;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;	
+		background-color: rgba(135,135,135,0.6);
+		padding-right: 20px;
+		
+		}
+.profile {
+		position: relative;
+		top: -845px;
+		right: 55px;
+		z-index: -5;
+		}
+#aboutMeText{
+		color: white;		
+		}
+#aboutMeBackground {
+		background-color: rgba(102,94,94,0.8);
+		position: relative;
+		z-index: -4;
+		width: 600px;
+		height: 200px;
+		top: -900px;
+		right: 55px;
+		}
+#project1box {
+    	width: 300px;
+    	height: 194px;
+    	-webkit-border-radius: 8px;
+    	-moz-border-radius: 8px;
+    	-khtml-border-radius: 8px;  
+    	border-radius: 8px;
+    	border:solid white 3px;
+    	overflow: hidden;
+   		padding: 10px;
+    	position: relative;
+    	top: -320px;
+    	right: 50px;
+		}
+#project1photo {
+		background: red;
+		padding: 0;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-khtml-border-radius: 8px;  
+		border-radius: 8px;
+		width: 300px;
+		height: 194px;
+		overflow: hidden;
+		}
+#box1:hover, #box2:hover {box-shadow: 4px 4px 33px rgba(0,0,0,0.56)}
+.shortAppInfo, .shortDesignInfo {color: #ede7be}
+.wordpress:hover, .fb:hover, .linkedin:hover {opacity: 0.7;}
+.navWhatDo:hover, .navProjects:hover, .navAboutMe:hover {color: #489aac;}
+.description {font-size: 10px;}
+/*Link Elements */
+a:link, a:visited {
+		text-decoration: none; 
+		color: #3a3a3a;
+		}
+		#horiz_container_outer, #scrollbar {position: relative; right: 150px;}
+/*Show (project) Elements*/
+.photo {
+		position: absolute;
+		top: 300px;
+		right: 20px;
+		z-index: -1;
+		}
+#showInfo {
+		padding: 20px;
+		padding-left: 0px;
+		font-family: "Trebuchet MS";
+		text-align: right;
+		z-index: 3;
+		background-color: rgba(119,121,121,0.8);
+		height: 450px;
+		color: white;
+		position: absolute;
+		top: 275px;
+		left: -80px;
+		width: 400px;
+		height: 400px;
+		}
+.showBackButton {
+		background-color: #68d4ec;
+		color: white;
+		position: relative;
+		top: -75px;
+		left: 130px;
+		letter-spacing: 3px;
+		font-family: 'BreeSerif-Regular';
+		padding: 5px;
+		padding-left: 15px;
+		padding-right: 15px;
+		}
+.showBackButton:hover {
+		background-color:rgba(199,197,197,0.8);
+		cursor: pointer;
+		}
+#showDescription {
+		width: 300px;
+		float: right
+		}
+.back {
+		position: absolute;
+		top: -40px;
+		left: 395px;
+		}
+.webdev {
+		color: #f3bf32;
+		font-size: 30px;
+		}
+#showImage {
+		position: relative;
+		left: 133px;
+		top: 29px;
+		width: 1030px;
+		height: 440px;
+		margin: 0 auto;
+		overflow: hidden;
+		border:solid white 3px;
+		overflow: hidden;
+		}
+#showImageBackground {
+		width: 200px;
+		height: 440px;
+		position: absolute;
+		left: 1020px;
+		top: 275px;
+		margin: 0 auto;
+		padding: 0px;
+		padding-right: 30px;
+		background-color: rgba(119,121,121,0.8);
+}
+#showProjectInfo {padding: 50px;}
+#show {height: 500px;}
+/*Slide show*/
+#slideshow {	
+   		position:absolute;
+   		height:360px;
+   		width: 650px;
+   		right: -95px;
+   		overflow: hidden;
+   		z-index: 3;
+}
+#slide-wrapper {
+	position: relative;
+	height: 350px;
+	width: 555px;
+	overflow: hidden;
+	top: -420px;
+	right: 55px;
+}
+#hideOverflow {overflow: hidden;}
+#woodgrain{overflow: hidden;}
+#woodgrain-wrapper {
+		position: relative;
+		z-index: 9;
+		top: -693px;
+		right: -308px;
+		height:140px;
+		width: 500px;
+		}
+#wood-top {
+		position:absolute;
+		top: 693px;
+		line-height: -0px;
+		right: 173px;	
+}
+#wood-bottom {
+		position:absolute;
+		top: 868px;
+		line-heght: -0px;
+		right: 173px;
+		
+}
+
+#wood-top, #wood-bottom {
+		overflow: hidden;
+		width: 540px;
+		}
+#slideshow IMG {
+    	position:absolute;
+    	top:0;
+    	left:0;
+    	z-index:8;
+    	opacity:0.0;
+}
+#slideshow IMG.active {
+    	z-index:10;
+    	opacity:1.0;
+}
+#slideshow IMG.last-active {z-index:9;}
