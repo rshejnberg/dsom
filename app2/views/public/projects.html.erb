@@ -1,0 +1,26 @@
+
+<script type="text/javascript">
+$(function(){
+$('.navProjects > a').css('color', '#f3bf32');
+$(".projectInfo").hide();
+
+$(".projectPicture").hover(function{
+	
+	}, function()
+	{
+		
+	});
+});
+</script>
+<div id="projectsContainer">
+<p class="projects">
+	<% @projects.each do |project| %>
+	<span class="project">
+		<%= link_to image_tag(project.photo.url(:small)),
+project%>
+
+	
+	</span>
+	<% end %>
+</p>
+</div>

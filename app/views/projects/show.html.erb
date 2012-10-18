@@ -1,0 +1,56 @@
+<div id="showContainer">
+	<br />
+
+	
+	<span class="showInfo">
+		<p class="showCompany">
+			<%= @project.company %>
+			<b><%= @project.created.year %></b>
+			</p>
+			<p>
+				
+			</p>
+			<div class="showBooleans">
+				
+				
+					<% if @project.backend %>
+						<span class="badge badge">
+							Backend
+						</span>
+					<% else %> 
+					<% end %>
+					&nbsp&nbsp&nbsp
+					<% if @project.database %>
+					<span class="badge badge-warning">
+						Database
+					</span>
+					<% else %> 
+					<% end %>
+					&nbsp&nbsp&nbsp
+					<% if @project.design %>
+					<span class="badge badge-info">
+						Design
+					</span>
+					<% else %> 
+					<% end %>
+				<br /><br />
+			</div>
+			<p class="showDescription">
+				<%= @project.description %>
+			</p>
+			<br />
+	
+	</span>
+	<p class="showImageContainer">
+		<div class="showImage" style="margin-right: 20px">
+			<%= image_tag @project.photo.url(:large) %>
+		</div>
+		<div class="showImage">
+			<%= image_tag @project.photo2.url(:large) %>
+		</div><br />
+		<div style="clear: left; margin-top: 20px;" class="showImage">
+			<%= image_tag @project.photo3.url(:large) %>
+		</div>
+	</p>
+
+</div>

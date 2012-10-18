@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	<title> Chicago Web Developer & Designer - Raphael Shejnberg </title>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" id="size-stylesheet" href="assets/application.css"  type="text/css" media="screen" /> 
+
+</head>
+<body>
+	<header>
+		<span class="logo">
+			<span class="logoSection">(development)</span>
+			state of mind
+		 </span>
+		
+		 	<nav>
+		 		<ul>
+		 			<li class="navHome">
+		 			<%= link_to root_url do%>
+		 			<i class="icon-white icon-home"></i> 
+		 			<% end %>
+		 			</li>
+		 			<li class="navWhatDo">
+		 			<%= link_to :controller => 'public', :action => 'whatdo' do%>
+		 			<i class="icon-white icon-briefcase"></i> 
+		 			<% end %>
+		 			</li>
+		 			<li class="navAboutMe">
+		 				<%= link_to :controller => 'public', :action => 'aboutme' do%>
+		 					<i class="icon-white icon-user"></i> 
+		 				<% end %>
+		 			</li>
+		 			<li class="navProjects">
+		 				<%= link_to :controller => 'public', :action => 'projects' do%>
+		 					<i class="icon-white icon-inbox"></i> 
+		 				<% end %>
+		 			</li>
+		 		</ul>
+		 		<span id="navPops" class="navHomePop">
+		 		Home
+		 		</span>
+		 		<span id="navPops" class="navWhatDoPop">
+		 		What I do
+		 		</span>
+		 		<span id="navPops" class="navAboutMePop">
+		 		About Me
+		 		</span>
+		 		<span id="navPops" class="navProjectsPop">
+		 		Projects
+		 		</span>
+		 	</nav>
+		
+		
+	
+	</header>
+
+
+	<%= yield %>
+	<br /><br />	
+	<div id="footer">
+		<div class="footAboutMe">
+			<p class="footAboutMeDescription">
+			I'm Raphael Shejnberg, a Chicago-based web developer 
+			who loves making beautiful and complex sites that 
+			exceed expectations
+			<%= link_to 'Get in touch', {controller => 'public', :action => 'aboutme'}%>
+			<br /><br />
+			</p>
+			<p class="footSocialMedia">
+			<a href="http://rshejnberg.wordpress.com" id="wordpress" class="btn btn-inverse btn-large"> <%= image_tag 'wordpress.png' %>see what I've been working on at wordpress</a><br />
+			<a href="http://www.facebook.com/rshejnberg" id="facebook" class="btn btn-inverse btn-large">
+			<%= image_tag 'facebook.png' %>check out what I'm up to on facebook
+			</a><br />
+			<a href="www.linkedin.com/in/rshejnberg" id="linkedin" class="btn btn-inverse btn-large">
+			<%= image_tag 'linkedin.png' %>follow me professionally linked in
+			</a><br />
+			</p>
+		</div>
+		<div id="footerEnd">
+		Built by Raphael Shejnberg on a Rails framework using JQuery and Twitter-Bootstrap
+		</div>
+		
+	</div>
+
+</body>
+</html>

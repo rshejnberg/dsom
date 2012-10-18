@@ -91,6 +91,7 @@ $('#homeSlideNext').click(
 			}
 	
 		});
+
 function showSlideOne()
 {
 	var firstTime = true;
@@ -98,7 +99,7 @@ function showSlideOne()
 	$('#homeSlidePrev').css('color', 'gray');
 	$("#homePage").animate({top: '7px'}, 1000);
 	$("#wordlistcontainer").delay('1000');
-	for(var wordNumber=0; wordNumber<5; wordNumber++)
+	for(var wordNumber=0; wordNumber<6; wordNumber++)
 		{
 		var posStringPre = '-';
 		var posStringSuff = 'px';
@@ -129,9 +130,10 @@ function showSlideFour()
 
 }
 
-function showProject()
-{
-
-}
-
+var div = $(this).next('.projectCaption');
+$('.project').hover(function(){
+	$(this).children().animate({top: '-9px'}, 300);
+}, function(){
+	$(this).children().animate({top: '-51px'}, 300);
+});
 });

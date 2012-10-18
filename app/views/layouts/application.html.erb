@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<%= stylesheet_link_tag    "application", :media => "all" %>
 	
 	<%= javascript_include_tag "application" %>
@@ -13,7 +14,7 @@
 </head>
 <body>
 	<header>
-		<span class="logo">
+		<span id="logo2" class="logo">
 			<span class="logoSection">(development)</span>
 			state of mind
 		 </span>
@@ -21,22 +22,22 @@
 		 	<nav>
 		 		<ul>
 		 			<li class="navHome">
-		 				<%= link_to root_url do%>
-		 					<i class="icon-white icon-home"></i> 
-		 				<% end %>
+		 			<%= link_to root_url do%>
+		 			<i class="icon-white icon-home"></i> 
+		 			<% end %>
 		 			</li>
 		 			<li class="navWhatDo">
-		 				<%= link_to :controller => 'public', :action => 'whatdo' do%>
-		 					<i class="icon-white icon-briefcase"></i> 
-		 				<% end %>
+		 			<%= link_to :controller => 'public', :action => 'whatdo' do%>
+		 			<i class="icon-white icon-briefcase"></i> 
+		 			<% end %>
 		 			</li>
 		 			<li class="navAboutMe">
-		 				<%= link_to controller => 'public', :action => 'aboutme' do%>
+		 				<%= link_to :controller => 'public', :action => 'aboutme' do%>
 		 					<i class="icon-white icon-user"></i> 
 		 				<% end %>
 		 			</li>
 		 			<li class="navProjects">
-		 				<%= link_to controller => 'public', :action => 'projects' do%>
+		 				<%= link_to :controller => 'projects', :action => 'index' do%>
 		 					<i class="icon-white icon-inbox"></i> 
 		 				<% end %>
 		 			</li>
@@ -67,23 +68,22 @@
 			<p class="footAboutMeDescription">
 			I'm Raphael Shejnberg, a Chicago-based web developer 
 			who loves making beautiful and complex sites that 
-			exceed expectations<a href="#"> Talk to me </a><br /><br />
+			exceed expectations
+			<%= link_to 'Get in touch', {controller => 'public', :action => 'aboutme'}%>
+			<br /><br />
 			</p>
 			<p class="footSocialMedia">
-			
-			<a href="#" class="btn btn-inverse btn-large">
-			<img src="assets/wordpress.png">see what I've been working on at wordpress</a>
-			<br />
-			<a href="#" class="btn btn-inverse btn-large">
-			<img src="assets/facebook.png">check out what I'm up to on facebook
+			<a href="http://rshejnberg.wordpress.com" id="wordpress" class="btn btn-inverse btn-large"> <%= image_tag 'wordpress.png' %>see what I've been working on at wordpress</a><br />
+			<a href="http://www.facebook.com/rshejnberg" id="facebook" class="btn btn-inverse btn-large">
+			<%= image_tag 'facebook.png' %>check out what I'm up to on facebook
 			</a><br />
-			<a href="#" class="btn btn-inverse btn-large">
-			<img src="assets/linkedin.png">follow me professionally linked in
+			<a href="www.linkedin.com/in/rshejnberg" id="linkedin" class="btn btn-inverse btn-large">
+			<%= image_tag 'linkedin.png' %>follow me professionally linked in
 			</a><br />
 			</p>
 		</div>
-		<div id="footEnd">
-		
+		<div id="footerEnd">
+		Built by Raphael Shejnberg on a Rails framework using JQuery and Twitter-Bootstrap
 		</div>
 		
 	</div>

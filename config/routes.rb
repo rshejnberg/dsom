@@ -1,4 +1,6 @@
 Dsom::Application.routes.draw do
+  resources :projects
+
   get "public/home"
 
   get "public/whatdo"
@@ -6,7 +8,9 @@ Dsom::Application.routes.draw do
   get "public/aboutme"
 
   get "public/projects"
-
+  
+  match 'projects/portfolio' => 'projects#portfolio', :as => :portfolio
+  
   root :to => "public#home"
   # The priority is based upon order of creation:
   # first created -> highest priority.

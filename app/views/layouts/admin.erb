@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	<title> Chicago Web Developer & Designer - Raphael Shejnberg </title>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" id="size-stylesheet" href="assets/application.css"  type="text/css" media="screen" /> 
+
+</head>
+<body>
+
+	<header>
+		<span class="logo">
+			<span class="logoSection">(development)</span>
+			state of mind
+		 </span>
+		
+		 	<nav>
+		 		<ul>
+		 			<li class="navHome">
+		 			<%= link_to root_url do%>
+		 			<i class="icon-white icon-home"></i> 
+		 			<% end %>
+		 			</li>
+		 			<li class="navWhatDo">
+		 			<%= link_to :controller => 'public', :action => 'whatdo' do%>
+		 			<i class="icon-white icon-briefcase"></i> 
+		 			<% end %>
+		 			</li>
+		 			<li class="navAboutMe">
+		 				<%= link_to :controller => 'public', :action => 'aboutme' do%>
+		 					<i class="icon-white icon-user"></i> 
+		 				<% end %>
+		 			</li>
+		 			<li class="navProjects">
+		 				<%= link_to :controller => 'projects', :action => 'index' do%>
+		 					<i class="icon-white icon-inbox"></i> 
+		 				<% end %>
+		 			</li>
+		 		</ul>
+		 		<span id="navPops" class="navHomePop">
+		 		Home
+		 		</span>
+		 		<span id="navPops" class="navWhatDoPop">
+		 		What I do
+		 		</span>
+		 		<span id="navPops" class="navAboutMePop">
+		 		About Me
+		 		</span>
+		 		<span id="navPops" class="navProjectsPop">
+		 		Projects
+		 		</span>
+		 	</nav>
+		
+		
+	
+	</header>
+	<%= yield %>
+
+</body>
+</html>

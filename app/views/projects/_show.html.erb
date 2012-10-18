@@ -1,0 +1,47 @@
+<div id="projectShow">
+	<br />
+	<p id="notice" ><%= notice  %></p>
+	<p class="showImage">
+		<%= image_tag @project.photo.url(:large) %>
+	</p>
+	<span class="showRest">
+		<p class="showCompany">
+			<%= @project.company %>
+			</p>
+			<p>
+				<b><%= @project.created.year %></b>
+			</p>
+			<div class="showBooleans">
+				
+				<p>
+					<% if @project.design %>
+						<span class="badge badge">
+							Design
+						</span>
+					<% else %> 
+					<% end %>
+				</p>
+				<p>
+					<% if @project.database %>
+					<span class="badge badge-warning">
+						Database
+					</span>
+					<% else %> 
+					<% end %>
+				</p>
+				<p>
+					<% if @project.database %>
+					<span class="badge badge-info">
+						Design
+					</span>
+					<% else %> 
+					<% end %>
+				</p><br />
+			</div>
+			<p class="showDescription">
+				<%= @project.description %>
+			</p>
+			<br />
+	
+	</span>
+</div>
