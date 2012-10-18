@@ -180,7 +180,8 @@ nav
 		height: 290px;
 		background-image: url('footerBackground2.png');
 		font-weight: bold;
-		color: $colFontWhite;		
+		color: $colFontWhite;	
+		overflow: scroll;	
 		.footAboutMeDescription
 			{
 			font-family: $fontRaleway;
@@ -350,6 +351,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', end
 }
 @media only screen
 and (max-width: 480px)	{
+.footAboutMe{overflow: hidden;}
 #homeSlide2 
 			{	
 			width: 1000px;
@@ -639,6 +641,16 @@ and (min-width : 480px)  {
 	position: relative;
 
 	}
+	.whatDoSub
+		{
+		position: relative;
+		top: 100px;
+		right: 00px;
+		width: 300px;
+		font-family: 'Trebuchet MS';
+		font-weight: bold;
+		color: $colFontWhite;
+		}
 	/* Projects */
 	.projects
 		{
@@ -700,7 +712,7 @@ and (min-width : 480px)  {
 			overflow: scroll;
 			position: relative;
 			float: left;
-			top: -650px;
+			top: -685px;
 			left: 330px;
 			width: 300px;
 			}
@@ -742,7 +754,7 @@ and (min-width : 780px)
 	{
 	background-image: url('whatDoBackground.png');
 	font-family: 'Homestead-Inline';
-	width: 95%;
+	width: 96%;
 	padding: 20px;
 	height: 1220px;
 	overflow-y: scroll;
@@ -848,9 +860,9 @@ and (max-width : 780px)
 		}
 	.whatDoSub
 		{
-		position: relative;
-		top: 100px;
-		right: 200px;
+		position: absolute;
+		top: 150px;
+		right: 100px;
 		width: 300px;
 		font-family: 'Trebuchet MS';
 		font-weight: bold;
@@ -934,6 +946,7 @@ and (max-width : 480px)
  
  .footSocialMedia {position: relative; left: 15%;}
  .footAboutMeDescription {visibility: hidden;}
+ 
 	#homePage
 		{	
 		position: absolute;
@@ -1006,10 +1019,11 @@ and (max-width : 480px)
 	{
 	background-image: url('whatDoBackground.png');
 	font-family: 'Homestead-Inline';
-	width: 95%;
+	width: 91%;
 	padding: 20px;
 	height: 1220px;
 	overflow-y: scroll;
+	overflow-x: hidden;
 	position: relative;
 
 	
@@ -1019,23 +1033,24 @@ and (max-width : 480px)
 .whatDo 
 	{
 	height: 620px;
-	width: 100%;
+
 	padding: 40px;
 	position: relative;
 	columns: 4;
 	#whatDoTitle 
 		{
-		position: relative;
-		top: 70px;
-		left: -7%;
+		position: absolute;
+		top: 120px;
+		left: 0px;
+		
 		font-size: 70px;
 		text-align: center;
 		color: rgba(245,245,230,0.61);
 		}
 	.whatDoSub
 		{
-		position: relative;
-		top: 100px;
+		position: absolute;
+		top: 150px;
 		left: 23%;
 		width: 300px;
 		font-family: 'Trebuchet MS';
@@ -1045,7 +1060,7 @@ and (max-width : 480px)
 	#columns
 		{
 		position: relative;
-		top: 100px;
+		top: 150px;
 		right: 40px;
 		color: rgba(245,245,230,0.81);
 		

@@ -115,7 +115,7 @@ function showSlideTwo()
 {
 	
 	$("#homePage").animate({top: '-460px'}, 1000);
-	$("#homeSlidePrev").fadeIn(3500);
+	$("#homeSlidePrev").fadeIn(1500);
 }
 function showSlideThree()
 {

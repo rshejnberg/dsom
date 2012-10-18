@@ -9,6 +9,8 @@ Dsom::Application.routes.draw do
 
   get "public/projects"
   
+  get "public/livewell"
+  
   match 'projects/portfolio' => 'projects#portfolio', :as => :portfolio
   
   root :to => "public#home"
