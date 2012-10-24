@@ -63,8 +63,8 @@
 
 	<%= yield %>
 	<br /><br />	
-	<div id="footer">
-		<div class="footAboutMe">
+	<div id="footer" class="footer2">
+		<div class="footAboutMe" id="footAboutMe2">
 			<p class="footAboutMeDescription">
 			I'm Raphael Shejnberg, a Chicago-based web developer 
 			who loves making beautiful and complex sites that 
@@ -72,15 +72,23 @@
 			<%= link_to 'Get in touch', {controller => 'public', :action => 'aboutme'}%>
 			<br /><br />
 			</p>
-			<p class="footSocialMedia">
-			<a href="http://rshejnberg.wordpress.com" id="wordpress" class="btn btn-inverse btn-large"> <%= image_tag 'wordpress.png' %>see what I've been working on at wordpress</a><br />
-			<a href="http://www.facebook.com/rshejnberg" id="facebook" class="btn btn-inverse btn-large">
-			<%= image_tag 'facebook.png' %>check out what I'm up to on facebook
-			</a><br />
-			<a href="www.linkedin.com/in/rshejnberg" id="linkedin" class="btn btn-inverse btn-large">
-			<%= image_tag 'linkedin.png' %>follow me professionally linked in
-			</a><br />
+			<p class="footSocialMedia" >
+			<a href="htt://www.rshejnberg.tumblr.com" class="sm" id="tumblr">
+			<%= image_tag 'tumblr.png' %></a>
+			<br />
+			<a href="http://www.facebook.com/rshejnberg" class="sm" id="facebook">
+			<%= image_tag 'facebook2.png' %></a>
+			<br />
+			<a href="www.linkedin.com/in/rshejnberg" class="sm" id="linkedin">
+			<%= image_tag 'linkedin2.png' %></a><br />
+		
 			</p>
+			<span class="socialMediaPop" id="tumblrPop">
+			tumblr</span><br />
+			<span class="socialMediaPop" id="facebookPop">
+			facebook</span><br />
+			<span class="socialMediaPop" id="linkedinPop">
+			linked in</span><br />
 		</div>
 		<div id="footerEnd">
 		Built by Raphael Shejnberg on a Rails framework using JQuery and Twitter-Bootstrap

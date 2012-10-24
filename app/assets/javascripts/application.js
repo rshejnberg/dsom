@@ -34,6 +34,20 @@ $("li").hover(function(){
 	$('.navWhatDoPop').css('visibility', 'hidden');
 	$('.navAboutMePop').css('visibility', 'hidden');
 	});
+$(".sm").hover(function(){
+	var myClass = $(this).attr("id");
+	if(myClass == 'tumblr')
+	 $('#tumblrPop').css('visibility', 'visible');
+	 if(myClass == 'facebook')
+	 $('#facebookPop').css('visibility', 'visible');
+	 if(myClass == 'linkedin')
+	 $('#linkedinPop').css('visibility', 'visible');
+		}, 
+	function(){
+	$('#tumblrPop').css('visibility', 'hidden');
+	$('#facebookPop').css('visibility', 'hidden');
+	$('#linkedinPop').css('visibility', 'hidden');
+	});
 var clickCount = 0;
 $('#homeSlidePrev').click(
 	function(){

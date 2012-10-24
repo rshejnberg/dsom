@@ -1,4 +1,6 @@
 Dsom::Application.routes.draw do
+  resources :supports
+
   resources :projects
 
   get "public/home"
@@ -10,6 +12,8 @@ Dsom::Application.routes.draw do
   get "public/projects"
   
   get "public/livewell"
+  
+  match '/contact_email' => 'public#send_mail'
   
   match 'projects/portfolio' => 'projects#portfolio', :as => :portfolio
   
