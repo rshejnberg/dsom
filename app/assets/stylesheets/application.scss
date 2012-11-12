@@ -254,13 +254,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 		#homeSlidePrev, #homeSlideNext
 			{
 			position: relative;
-			color: gray;
+			color: $colNav;
 			font-size: 40px;
 			z-index: 12;
 			top: 450px;
 			cursor: pointer;
 			left: 50%;
 			}
+		#homeSlidePrev:hover, #homeSlideNext:hover {color: gray;}
 		}
 	#projectsContainer {
 	background-image: url('projectsBackground.png');
@@ -352,9 +353,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 				z-index: 10;
 				top: 100px;
 				font-size: 60px;
-				color: $colTeal;
+				background-color: $colTeal;
+				color: $colNav;
 				padding: 10px;
-				border-radius: 10px;
+				
 				}//end homeSlideTitle2
 	
 			.homeSlide2Text
@@ -381,86 +383,69 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 					}
 				}
 	}//end slide2
-				#homeSlide3
-				{
-			font-family: 'SansitaOne';
-			width: 100%; 
-			height: 520px;
-			.slide3title
-				{
-				font-size: 110px;
-				position: relative;
-				left: 0px;
-				top: 200px;
-				}
-			.slide3text
-				{
-				font-family: $fontBree;
-				font-size: 15px;
-				width: 600px;
-				position: relative;
-				top: 250px;
-				left: 50px;
-				text-align: left;
-				}
-			}//end slide3
-				#homeSlide4
-				{
+	#homeSlide3
+		{
+		font-family: 'SansitaOne';
+		width: 100%; 
+		height: 520px;
+		overflow: scroll;
+		.slide3title
+			{
+			font-size: 110px;
 			position: relative;
-			font-size: 10px;
-			width: 100%; 
-			height: 515px;
-			top: 50px;
-			overflow-x: scroll;
-			overflow-y: hidden;
+			left: 70px;
+			top: 100px;
+			line-height: 90px;
+			opacity: 0.8;
+			}
+		.slide3text
+			{
+			font-family: $fontBree;
+			font-size: 30px;
+			line-height: 30px;
+			width: 650px;
+			position: relative;
+			left: 90px;
+			top: 110px;
+			text-align: left;
+			}
+		}//end slide3
+	#homeSlide4
+		{
+		position: relative;
+		font-size: 10px;
+		width: 100%; 
+		height: 615px;
+		top: -50px;
+		overflow: scroll;
+		font-size: 30px;
+		color: $colFontWhite;
+		#slide4image
+			{
+			position: absolute;
+			overflow: visible;
+			left:300px;
+			top: 0px;
+			width: 800px;
+		
+			img {position: relative;  width: 700px; top: 75px;}
+			}
+		.slide4text
+			{
+			background-color: rgba(41,35,35,0.72);
+			width: 400px;
 			font-size: 30px;
 			color: $colFontWhite;
-			#slide4image
-				{
-				position: relative;
-				left: 00px;
-				top: 00px;
-				width: 900px;
-				}
-			.slide4text
-				{
-				background-color:rgba(182,207,214,0.85);
-				width: 400px;
-				font-size: 30px;
-				color: $colFontWhite;
-				padding: 3px;
-				line-height: 33px;
-				position: relative;
-				left: 200px;
-				overflow: scroll;
-				top: 50px;
-				z-index: 10;
-				}
-			}//end slide4
-					#homeSlide3
-			{
-			font-family: 'SansitaOne';
-			width: 100%; 
-			height: 520px;
+			padding: 3px;
+			line-height: 33px;
+			position: relative;
+			left: 70px;
 			overflow: scroll;
-			
-			.slide3title
-				{
-				position: relative;
-				right: -1%;
-				top: 200px;
-				}
-			.slide3text
-				{
-				font-family: $fontBree;
-				width: 350px;
-				position: relative;
-				top: 220px;
-				left: 00px;
-				text-align: left;
-				
-				}
-			}//end slide3
+			top: 200px;
+			z-index: 10;
+			}
+		}//end slide4
+					
 			}//end home-page
 
 	//home small
@@ -488,8 +473,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 				top: 100px;
 				font-size: 45px;
 				font-family: $fontRaleway;
-		
-				color: $colTeal;
+				background-color: $colTeal;
+				color: $colNav;
 				padding: 10px;
 				border-radius: 10px;
 				}//end homeSlideTitle2
