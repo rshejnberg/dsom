@@ -414,7 +414,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 		width: 100%; 
 		height: 615px;
 		top: -50px;
-		overflow: scroll;
+		z-index: 10;
 		font-size: 30px;
 		color: $colFontWhite;
 		#slide4image
@@ -422,10 +422,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 			position: absolute;
 			overflow: visible;
 			left:300px;
-			top: 0px;
 			width: 800px;
-		
-			img {position: relative;  width: 700px; top: 75px;}
+			
+			img {position: relative;  width: 700px; top: -20px;}
 			}
 		.slide4text
 			{
@@ -437,9 +436,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 			line-height: 33px;
 			position: relative;
 			left: 70px;
-			overflow: scroll;
+			
 			top: 200px;
-			z-index: 10;
+			z-index: 12;
 			}
 		}//end slide4
 					
@@ -507,26 +506,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 			.slide3text {font-size: 20px;}	
 			
 			}
-		#homeSlide4
-			{
-		width: 100%;
-		#slide4image
-			{
-			position: relative;
-			top: 150px;
-			padding: 4px;
-			}
-		.slide4text
-			{
-			background-color:rgba(182,207,214,0.85);
-			font-size: 25px;
-			color: $colFontWhite;
-			position: relative;
-			top: 100px;
-			left: 20px;
-			}
 		
-		}
 		}
 	
 	//home wide
