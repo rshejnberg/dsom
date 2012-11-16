@@ -8,6 +8,8 @@ Dsom::Application.routes.draw do
   get "public/whatdo"
 
   get "public/aboutme"
+  
+  get "public/portfolio"
 
   get "public/projects"
   

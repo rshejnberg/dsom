@@ -284,7 +284,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 		{
 		width: 1000px;
 		position: relative;
-		overflow: hidden;
+		//overflow: hidden;
 		height: 570px;
 		}
 	#homeSlide1
@@ -292,20 +292,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 		top: 57px; 
 		width: 100%;
 		height: 525px;
-		color: $colNav;	
+		color: $colNav;
+		.bulb {text-shadow: 1px 1px 19px orange;}	
 		.homeSlide1Title 
 			{
 			position: absolute;
 			top: 200px;
 			width: 100%;		
 			text-align: center;
-			height: 50px;	
+			height: 50px;
+			top: 350px;	
+			
 			}	
 			.logoSectionSlide
 				{
 				position: relative;
 				color: $colFontOrange;
-				overflow: hidden;
 				display: inline;
 				height: 60px;
 				line-height: 60px;
@@ -313,16 +315,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 				}
 			#wordlist 
 				{
+				position: relative;
 				line-height: 50px;
-		
+				top: 355px;
 				text-align: left;
-			
 				overflow: hidden;
+			
 				height: 50px;
 			
 				}
 			#wordlistcontainer
-				{position: relative; right: -50%;}
+				{position: relative; right: -50%; top: 200px;}
 				}//end slide1
 				#homeSlide2 
 				{	
